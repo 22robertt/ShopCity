@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Professional Website</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    /* Header Styles */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-size: 18px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+      color: white;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    /* Featured Products */
+    .featured-products {
+      padding: 50px 20px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .featured-products h2 {
+      margin-bottom: 40px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-card h3 {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    .product-card button {
+      padding: 10px 20px;
+      background: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    footer ul li {
+      margin: 0 10px;
+    }
+
+    footer ul li a {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h2>Welcome to My Store</h2>
+      <p>Your one-stop-shop for the latest products!</p>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Product description goes here.</p>
+        <button>Shop Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Product description goes here.</p>
+        <button>Shop Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>Product description goes here.</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+    <p>&copy; 2024 My Store</p>
+  </footer>
+
+</body>
+</html>
